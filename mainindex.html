@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Cooking</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+</head>
+<body>
+
+
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="about.html" class="w3-bar-item w3-button w3-padding-large">ABOUT US</a>
+    <a href="#food" class="w3-bar-item w3-button w3-padding-large w3-hide-small">FOOD</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="index.html" class="w3-bar-item w3-button">Recipe Website</a>
+        <a href="recipe.html" class="w3-bar-item w3-button">Ordering Website</a>
+      </div>
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#food" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">FOOD</a>
+</div>
+
+
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+
+  <div class="mySlides w3-display-container w3-center">
+    <img src="FoodImages\ingredients.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Preparing Ingredients</h3>
+      <p><b>There will be no risk or chance of ingredients running out in the middle or preparing meals. You can monitor what is left and replenish before taking the next order. 
+          It helps you create an organized kitchen that saves chefs a lot of energy.</b></p>   
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="FoodImages\serving.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Serving Food </h3>
+      <p><b>The most important things to remember about serving prepared foods are: Keep HOT foods HOT – Keep hot cooked foods between 140°F and 165°F until serving time. 
+          Harmful bacteria can grow rapidly below 140°F. When food is cooked to temperatures of 165°F to 212°F, most food-poisoning bacteria is killed.</b></p>    
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="FoodImages\dinamulag.jpg"style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Zambales Mango Festival</h3>
+      <p><b>Where we show off mangoes that have been hailed as one of the sweetest by none other than the Guinness World Records. A few might raise objections over this, especially since the mangoes from Guimaras also has a stake on having the best mangoes in the Philippines, but hey, take it up with the Guinness guys.</b></p>    
+    </div>
+  </div>
+
+
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h1 class="w3-wide">Recipe and Ordering Food Services</h1>
+    <h2 class="w3-wide">WHAT IS COOKING?</h2>
+    <p class="w3-opacity"><i>Hobby</i></p>
+    <p class="w3-justify">Cooking, cooking, or culinary arts is the art, science, and practice of preparing food for consumption by the use of heat. Cooking techniques and materials vary greatly, ranging from grilling meals over an open fire to utilizing electric stoves to baking in various sorts of ovens, all of which reflect local conditions.
+        Cooking styles are also determined by the cooks' skill levels and training. Cooking is done both at home and by professional cooks and chefs in restaurants and other food facilities.
+        Food preparation using heat or fire is a human-only activity. It may have begun approximately 2 million years ago, while archaeological evidence does not reach back more than 1 million years.<br><b><center>All Time Favorite Foods.</center></b></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <p>Lechon Paksiw <br> Pork cooked with vinegar,garlic and mang tomas to some.</p>
+        <img src="FoodImages\lechonpaksiw.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Bicol Express <br> Bicol Express, known natively in Bikol as sinilihan.</p>
+        <img src="FoodImages\bicolexpress.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p> Pesang Tilapia <br> Pesang Isda is a Fish Recipe. It is also called fish in ginger stew.</p>
+        <img src="FoodImages\pesa.jpg" class="w3-round" alt="Random Name" style="width:60%">
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
